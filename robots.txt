@@ -1,2 +1,3 @@
 User-agent: *
-Sitemap: https://www.taoclock.cc/sitemap.xml 
+Allow: /
+Sitemap: https://www.taoclock.cc/sitemap.xml
