@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaoClock | Elegant Full Screen Clock with AI Generated Backgrounds</title>
+    <meta name="description" content="Experience tranquility with TaoClock - a minimalist full-screen clock featuring stunning AI-generated backgrounds inspired by Eastern aesthetics. Perfect for focus and relaxation.">
+    <meta name="keywords" content="full screen clock, digital clock, AI art, Eastern aesthetics, minimalist design, meditation clock">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="TaoClock | Elegant Full Screen Clock">
+    <meta property="og:description" content="A minimalist clock with AI-generated backgrounds inspired by Eastern aesthetics.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://taoclock.art">
+    <meta property="og:image" content="assets/backgrounds/thumbnail/preview1.webp">
+    <link rel="canonical" href="https://taoclock.art">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "TaoClock",
+        "description": "A minimalist full-screen clock featuring stunning AI-generated backgrounds inspired by Eastern aesthetics",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "TaoClock Developer"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="background-container">
+        <div class="background active">
+            <picture>
+                <source srcset="assets/backgrounds/bg1.webp" type="image/webp">
+                <img src="assets/backgrounds/bg1.jpg" alt="Background">
+            </picture>
+        </div>
+    </div>
+    <div class="clock-container">
+        <div class="clock">
+            <div id="time" class="time">00:00:00</div>
+            <div id="date" class="date">March 21, 2024</div>
+        </div>
+        
+        <div class="controls">
+            <button id="fullscreen" class="control-btn" title="Fullscreen">
+                <img src="assets/icons/fullscreen.svg" alt="Fullscreen" class="icon">
+            </button>
+            <button id="settings" class="control-btn" title="Settings">
+                <img src="assets/icons/settings.svg" alt="Settings" class="icon">
+            </button>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="backgrounds-section">
+            <h2 class="section-title">Gallery</h2>
+            <div class="backgrounds-grid">
+                <div class="background-item" data-index="0">
+                    <div class="background-preview active">
+                        <img src="assets/backgrounds/thumbnail/preview1.webp" alt="Cloud Castle">
+                    </div>
+                    <div class="background-info">
+                        <div class="background-title">
+                            Cloud Castle
+                        </div>
+                        <div class="view-count">
+                            <img src="assets/icons/views.svg" alt="Views" class="view-icon">
+                            <span class="count" data-views="0">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="background-item" data-index="1">
+                    <div class="background-preview">
+                        <img src="assets/backgrounds/thumbnail/preview2.webp" alt="Ocean Dreams">
+                    </div>
+                    <div class="background-info">
+                        <div class="background-title">
+                            Ocean Dreams
+                        </div>
+                        <div class="view-count">
+                            <img src="assets/icons/views.svg" alt="Views" class="view-icon">
+                            <span class="count" data-views="0">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="background-item" data-index="2">
+                    <div class="background-preview">
+                        <img src="assets/backgrounds/thumbnail/preview3.webp" alt="Golden Pagoda">
+                    </div>
+                    <div class="background-info">
+                        <div class="background-title">
+                            Golden Pagoda
+                        </div>
+                        <div class="view-count">
+                            <img src="assets/icons/views.svg" alt="Views" class="view-icon">
+                            <span class="count" data-views="0">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="background-item" data-index="3">
+                    <div class="background-preview">
+                        <img src="assets/backgrounds/thumbnail/preview4.webp" alt="Jade Valley">
+                    </div>
+                    <div class="background-info">
+                        <div class="background-title">
+                            Jade Valley
+                        </div>
+                        <div class="view-count">
+                            <img src="assets/icons/views.svg" alt="Views" class="view-icon">
+                            <span class="count" data-views="0">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="background-item" data-index="4">
+                    <div class="background-preview">
+                        <img src="assets/backgrounds/thumbnail/preview5.webp" alt="Mountain Whispers">
+                    </div>
+                    <div class="background-info">
+                        <div class="background-title">
+                            Mountain Whispers
+                        </div>
+                        <div class="view-count">
+                            <img src="assets/icons/views.svg" alt="Views" class="view-icon">
+                            <span class="count" data-views="0">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="background-item" data-index="5">
+                    <div class="background-preview">
+                        <img src="assets/backgrounds/thumbnail/preview6.webp" alt="Autumn Serenity">
+                    </div>
+                    <div class="background-info">
+                        <div class="background-title">
+                            Autumn Serenity
+                        </div>
+                        <div class="view-count">
+                            <img src="assets/icons/views.svg" alt="Views" class="view-icon">
+                            <span class="count" data-views="0">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="background-item" data-index="6">
+                    <div class="background-preview">
+                        <img src="assets/backgrounds/thumbnail/preview7.webp" alt="Summer Delight">
+                    </div>
+                    <div class="background-info">
+                        <div class="background-title">
+                            Summer Delight
+                        </div>
+                        <div class="view-count">
+                            <img src="assets/icons/views.svg" alt="Views" class="view-icon">
+                            <span class="count" data-views="0">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="background-item" data-index="7">
+                    <div class="background-preview">
+                        <img src="assets/backgrounds/thumbnail/preview8.webp" alt="Lotus Dreams">
+                    </div>
+                    <div class="background-info">
+                        <div class="background-title">
+                            Lotus Dreams
+                        </div>
+                        <div class="view-count">
+                            <img src="assets/icons/views.svg" alt="Views" class="view-icon">
+                            <span class="count" data-views="0">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <div class="about-content">
+                <h2 class="section-title">About TaoClock</h2>
+                
+                <div class="about-grid">
+                    <div class="about-item">
+                        <h3>The Birth of TaoClock</h3>
+                        <p>TaoClock emerged from my journey in AI art creation. After months of exploring and refining prompts, I accumulated a collection of artworks that captured a unique blend of serenity and beauty. Rather than keeping these pieces private, I wanted to share them in a meaningful way - as dynamic backgrounds for a minimalist clock that everyone could enjoy.</p>
+                    </div>
+
+                    <div class="about-item">
+                        <h3>Curated Collection</h3>
+                        <p>Each background in this collection is carefully selected and refined. Through countless iterations and adjustments, only the most visually striking and harmonious pieces made it to the final selection, ensuring every moment spent with TaoClock is visually enchanting.</p>
+                    </div>
+
+                    <div class="about-item">
+                        <h3>AI Generated Art</h3>
+                        <p>Each background is a unique piece of AI-generated artwork, blending traditional Eastern aesthetics with modern digital artistry to create serene, contemplative spaces.</p>
+                    </div>
+
+                   
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 TaoClock. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="mailto:aoe800@gmail.com">Contact</a>
+                    <span class="footer-divider">·</span>
+                    <a href="links.html">Friends</a>
+                </div>
+                <p>crafted for harmony.</p>
+            </div>
+        </footer>
+    </div>
+    
+    <div class="settings-overlay" id="settingsOverlay">
+        <div class="settings-modal">
+            <div class="settings-header">
+                <h3>Settings</h3>
+                <button class="close-btn" id="closeSettings">×</button>
+            </div>
+            <div class="settings-content">
+                <div class="settings-item">
+                    <div class="setting-label">
+                        <div class="setting-title">Time Format</div>
+                        <div class="setting-desc">12/24 Hour</div>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" id="timeFormatToggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                
+                <div class="settings-item">
+                    <div class="setting-label">
+                        <div class="setting-title">Show Date</div>
+                        <div class="setting-desc">Show/Hide</div>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" id="showDateToggle" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="settings-item">
+                    <div class="setting-label">
+                        <div class="setting-title">Auto Change</div>
+                        <div class="setting-desc">Background</div>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" id="autoChangeToggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/clock.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/background.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const settingsManager = new SettingsManager();
+        });
+    </script>
+</body>
+</html> 
