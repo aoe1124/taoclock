@@ -9,6 +9,7 @@ class SettingsManager {
         this.timeFormatToggle = document.getElementById('timeFormatToggle');
         this.showDateToggle = document.getElementById('showDateToggle');
         this.autoChangeToggle = document.getElementById('autoChangeToggle');
+        this.darkTextToggle = document.getElementById('darkTextToggle');
         
         // 自动切换背景的定时器
         this.autoChangeInterval = null;
@@ -52,6 +53,11 @@ class SettingsManager {
             this.saveSettings();
             this.applySettings();
         });
+
+        this.darkTextToggle.addEventListener('change', () => {
+            this.saveSettings();
+            this.applySettings();
+        });
     }
 
     toggleFullscreen() {
@@ -78,6 +84,7 @@ class SettingsManager {
         this.timeFormatToggle.checked = settings.timeFormat === '12' || false;
         this.showDateToggle.checked = settings.showDate !== false;
         this.autoChangeToggle.checked = settings.autoChange || false;
+        this.darkTextToggle.checked = settings.darkText || false;
         
         this.applySettings();
     }
@@ -86,7 +93,8 @@ class SettingsManager {
         const settings = {
             timeFormat: this.timeFormatToggle.checked ? '12' : '24',
             showDate: this.showDateToggle.checked,
-            autoChange: this.autoChangeToggle.checked
+            autoChange: this.autoChangeToggle.checked,
+            darkText: this.darkTextToggle.checked
         };
         
         localStorage.setItem('clockSettings', JSON.stringify(settings));
@@ -110,6 +118,10 @@ class SettingsManager {
         } else {
             this.stopAutoChange();
         }
+
+        // 应用深色文字
+        const clockContainer = document.querySelector('.clock-container');
+        clockContainer.style.color = this.darkTextToggle.checked ? '#1A1A1A' : '#fff';
     }
 
     startAutoChange() {
