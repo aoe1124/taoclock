@@ -1,12 +1,13 @@
 {
   "redirects": [
     {
-      "source": "http://taoclock.cc/:path*",
-      "destination": "https://www.taoclock.cc/:path*",
-      "permanent": true
-    },
-    {
-      "source": "https://taoclock.cc/:path*",
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "taoclock.cc"
+        }
+      ],
       "destination": "https://www.taoclock.cc/:path*",
       "permanent": true
     }
